@@ -1,0 +1,4 @@
+backend/data
+backend/internal/data
+backend/internal/migrations
+backend/migrations
