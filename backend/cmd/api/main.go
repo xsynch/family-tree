@@ -6,7 +6,7 @@ import (
 	"log/slog"	
 	"net/http"
 	"os"
-	"time"
+	
 )
 
 const version = "1.0.0"
@@ -31,10 +31,17 @@ func main() {
 
 	logger := slog.New(slog.NewTextHandler(os.Stdout,nil))
 
-	app := application{
+	app := &application{
 		config: cfg,
 		logger: logger,
 	}
+	mux := http.NewServeMux()
 
-	
+	srv := NewServer(fmt.Sprintf("%s", cfg.port),mux)
+
+	app.logger.Info("starting server","address", srv.Addr, "env", cfg.env)
+	err := srv.ListenAndServe()
+	app.logger.Error(err.Error())
+	os.Exit(1)
+
 }
