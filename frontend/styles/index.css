@@ -7,13 +7,35 @@ body {
     
 }
 
-.inside {
+.outside {
     display: grid;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 5px;
-    background-color: blue;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1000px;
+    /* background-color: blue; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-columns: repeat(4);
     background: linear-gradient(120deg, #2563eb 0%, #7c3aed 50%, #0f172a 100%);
     color: #fff; */
+}
+
+.one {
+    grid-column: 1/2;
+    background-image: url("../images/image_1.jpg");
+}
+
+.two {
+    grid-column: 2/3;
+    background-image: url("../images/image_2.jpg");
+}
+
+.three {
+    grid-column: 3/4;
+    background-image: url("../images/image_3.jpg");
+}
+
+.four {
+    grid-column: 4/5;
+    background-image: url("../images/image_4.jpg");
 }
