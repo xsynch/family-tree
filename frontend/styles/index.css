@@ -36,6 +36,6 @@ body {
 }
 
 .four {
-    grid-column: 4/5;
+    grid-column: 4/6;
     background-image: url("../images/image_4.jpg");
 }
