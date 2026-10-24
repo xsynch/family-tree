@@ -22,24 +22,42 @@ body {
     /* grid-column: 1/2; */
     background-image: url("../images/image_1.jpg");
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
 }
 
 .two {
     /* grid-column: 2/3; */
     background-image: url("../images/image_2.jpg");
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .three {
     /* grid-column: 3/4; */
     background-image: url("../images/image_3.jpg");
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .four {
     /* grid-column: 4/6; */
     background-image: url("../images/image_4.jpg");
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
