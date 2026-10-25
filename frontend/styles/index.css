@@ -21,11 +21,16 @@ body {
 .one {
     /* grid-column: 1/2; */
     background-image: url("../images/image_1.jpg");
+    
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     text-align: center;
+    background-size:contain;
+    
+    
+
+    
     
     
 }
@@ -34,30 +39,34 @@ body {
     /* grid-column: 2/3; */
     background-image: url("../images/image_2.jpg");
     height: 100%;
-    display: flex;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: contain;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
 }
 
 .three {
     /* grid-column: 3/4; */
     background-image: url("../images/image_3.jpg");
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     text-align: center;
+    background-size: contain;
 }
 
 .four {
     /* grid-column: 4/6; */
     background-image: url("../images/image_4.jpg");
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     text-align: center;
+    background-size: contain;
 }
 
 
