@@ -7,6 +7,7 @@ body {
     height: 100vw;
     
     
+    
 }
 
 .outside-old {
@@ -26,13 +27,14 @@ body {
     display: grid;
     place-items: center;
     text-align: center;
-    background-size:contain;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
     
-    
-
-    
-    
-    
+}
+.one:hover{
+    transform: scale(1.05);
 }
 
 .two {
@@ -43,10 +45,10 @@ body {
     place-items: center;
     text-align: center;
     background-size: contain;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    transition: all 0.5s ease;
+}
+.two:hover{
+    transform: scale(1.05);
 }
 
 .three {
@@ -57,6 +59,10 @@ body {
     place-items: center;
     text-align: center;
     background-size: contain;
+    transition: all 0.5s ease;
+}
+.three:hover{
+    transform: scale(1.05);
 }
 
 .four {
@@ -67,9 +73,12 @@ body {
     place-items: center;
     text-align: center;
     background-size: contain;
+    transition: all 0.5s ease;
 }
 
-
+.four:hover{
+    transform: scale(1.05);
+}
 .outside {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
